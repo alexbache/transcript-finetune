@@ -1,5 +1,7 @@
 # Fine-tuning from an interview transcript
 
+A project I worked on to fine-tune interview transcripts. Works for 1x interviewer and 1x subject per transcript. Sharing online in case it can help anyone. 
+
 This repository contains a Python package that enables interaction with the OpenAI API and provides functionalities to structure interview transcripts for fine-tuning. The package includes the following files:
 
 1. `openai_functions.py`: This file contains a set of functions that allow easy interaction with the OpenAI API. Functions are available to upload files, retrieve uploaded files, create fine-tuned models, and check the status of ongoing fine-tuning processes.
