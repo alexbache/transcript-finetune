@@ -46,6 +46,24 @@ transcript_functions.dataframe_to_jsonl(df, "output.jsonl")
 transcript_functions.create_fine_tuning_data("transcript.txt", "output.jsonl")
 ```
 
+## Suggested Workflow
+1. Get your interview transcript files - I used .txt when testing and it worked well. Make sure to add the following to the top of your transcripts:
+```
+Interviewer: <Interviewer Label/Name>
+Subject: <Subject Label/Name>
+```
+
+2. Use the transcript functions to create your fine tuning data (.jsonl file)
+
+3. Upload your file to openai using the provided openai function
+
+4. Once your file is uploaded you can fine-tune a model of your choice using your uploaded file as the training data.
+
+5. Fine-tuning can take some time. The fine-tuning process is queued and eventually executed, you can use the get_finetune_status() function to check the status of your fine-tuned model.
+
+
 ## Note
 
 It is recommended to perform further data cleaning and processing before initiating fine-tuning using the OpenAI CLI. This will help improve the quality and performance of the fine-tuned models.
+
+[OpenAI Fine-Tuning Guide](https://platform.openai.com/docs/guides/fine-tuning)
