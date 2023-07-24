@@ -1,3 +1,4 @@
 usage.ipynb
 training_data/
 transcripts/
+__pycache__/
